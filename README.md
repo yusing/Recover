@@ -23,8 +23,14 @@
     ```bash
     cd Recover
     ```
+3. Make things executable
 
-3. Run `recover` and wait for it to run.
+    ```bash
+    chmod +x build/recover
+    chmod +x fix_corrupted.sh
+    ```
+
+4. Run `recover` and wait for it to run.
 
     ```bash
     build/recover $PATH_TO_DISK_IMAGE
@@ -32,7 +38,7 @@
 
     Recovered documents are stored in `$PWD/found`
 
-4. (optional) if you cannot open up the recovered document, run `fix_corrupted.sh`
+5. (optional) if you cannot open up the recovered document, run `fix_corrupted.sh`
 
     ```bash
     ./fix_corrupted.sh
